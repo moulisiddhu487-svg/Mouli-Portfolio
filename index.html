@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Mouli Godaba — Cloud &amp; DevOps Engineer</title>
 <meta name="description" content="Mouli Venkata Narasimha Godaba — Cloud & DevOps Engineer. Infrastructure, containers, CI/CD.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mouli Godaba — Cloud & DevOps Engineer">
+<meta property="og:description" content="Infrastructure, containers, CI/CD. Building production-grade systems on AWS & Azure.">
+<meta property="og:image" content="https://mouli-portfolio-six.vercel.app/og-image.png">
+<meta property="og:url" content="https://mouli-portfolio-six.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mouli Godaba — Cloud & DevOps Engineer">
+<meta name="twitter:description" content="Infrastructure, containers, CI/CD. Building production-grade systems on AWS & Azure.">
+<meta name="twitter:image" content="https://mouli-portfolio-six.vercel.app/og-image.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0b0d%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 font-family=%22monospace%22 fill=%22%23e8102a%22 text-anchor=%22middle%22>M</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,11 +109,11 @@ a{color:inherit;text-decoration:none;}
 .term-target { color: var(--text-mid); }
 
 .cursor-block {
-  display: inline-block; width: 0.6em; height: 1.1em; background: var(--red-bright);
-  vertical-align: middle; position: relative; top: -2px; margin-left: 2px;
+  display: inline-block; width: 0.6em; height: 1em; background: var(--red-bright);
+  vertical-align: text-bottom; position: relative; margin-left: 2px;
   animation: blink 1s step-end infinite;
 }
-.half-cursor { height: 0.7em; top: 0; width: 0.5em; margin-left: 6px; }
+.half-cursor { height: 1em; width: 0.5em; margin-left: 6px; }
 .green-cursor { background: var(--green); }
 .red-cursor { background: var(--red-bright); }
 
@@ -180,8 +189,8 @@ a{color:inherit;text-decoration:none;}
 .boot-skip{ margin-top:24px;font-size:11px;color:var(--text-low);cursor:pointer;background:none;border:1px solid var(--glass-border);padding:10px 20px;border-radius:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.1em;transition:all 0.3s;}
 .boot-skip:hover{color:var(--text-hi);border-color:var(--red-bright);box-shadow:0 0 15px var(--red-glow);}
 
-#scene-identity{min-height:100vh;justify-content:center;align-items:flex-start;text-align:left;padding-top:80px;margin-left:8vw;}
-@media (max-width: 820px){ #scene-identity{margin-left:0;align-items:center;text-align:center;} }
+#scene-identity{min-height:100vh;justify-content:center;align-items:center;text-align:center;padding-top:80px;}
+@media (max-width: 820px){ #scene-identity{padding-top:60px;} }
 .identity-wrap{opacity:0;transform:translateY(30px);transition:all 1.2s var(--ease);}
 .identity-wrap.reveal{opacity:1;transform:translateY(0);}
 
@@ -203,7 +212,7 @@ a{color:inherit;text-decoration:none;}
 .id-role span{color:var(--red-bright);text-shadow:0 0 15px var(--red-glow);}
 
 .bio-terminal {
-  max-width: 680px; margin: 32px 0 0; text-align: left; background: var(--glass-bg); border: 1px solid var(--glass-border);
+  max-width: 900px; width: 95%; margin: 32px auto 0; text-align: left; background: var(--glass-bg); border: 1px solid var(--glass-border);
   border-radius: 10px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.7); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
 }
 .bio-term-body { padding: 24px 30px; font-family: var(--font-mono); font-size: 14px; line-height: 1.8; color: var(--text-mid); }
@@ -211,7 +220,7 @@ a{color:inherit;text-decoration:none;}
 .bio-output.show { display: block; animation: fadeIn 0.3s ease; }
 .bio-status { color: var(--green); margin-top: 16px; display: none; font-weight: 600; text-shadow: 0 0 10px var(--green-glow); }
 .bio-status.show { display: block; animation: fadeIn 0.3s ease; }
-@media (max-width: 820px){ .bio-terminal { margin: 32px auto 0; } }
+.bio-terminal { margin: 32px auto 0; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
 .id-cta-row{display:flex;gap:16px;margin-top:48px;flex-wrap:wrap;}
@@ -230,14 +239,45 @@ a{color:inherit;text-decoration:none;}
 .timeline{ position:relative; padding-left: 32px; padding-right: 24px; }
 @media (max-width:600px){ .timeline { padding-left: 16px; padding-right: 8px; } }
 
-.t-item{position:relative;padding-bottom:48px;}
+.t-item{position:relative;padding-bottom:60px;}
 .t-item:last-child{padding-bottom:0;}
 .t-title{font-family:var(--font-display);font-weight:600;font-size:20px;margin-bottom:12px;color:#fff;}
 .t-desc{color:var(--text-mid);font-size:15px;line-height:1.7;max-width:760px;font-weight:400;}
-.t-dashed{border-top:1px dashed rgba(255,255,255,0.15);margin:24px 0;width:100%;max-width:760px;}
-.t-status-green{color:var(--green);font-family:var(--font-mono);font-size:13px;font-weight:600;text-shadow: 0 0 10px var(--green-glow);}
-.t-status-red{color:var(--red-bright);font-family:var(--font-mono);font-size:13px;font-weight:600;text-shadow: 0 0 10px var(--red-glow); display:flex; align-items:center;}
+.t-status-green{color:var(--green);font-family:var(--font-mono);font-size:13px;font-weight:600;text-shadow: 0 0 10px var(--green-glow); margin-top: 18px;}
+.t-status-red{color:var(--red-bright);font-family:var(--font-mono);font-size:13px;font-weight:600;text-shadow: 0 0 10px var(--red-glow); display:flex; align-items:center; margin-top: 18px;}
 .t-log{color:var(--text-mid);font-family:var(--font-mono);font-size:13px;margin-bottom:6px;}
+.t-log:first-of-type{margin-top:18px;}
+
+/* Terminal-style separator between timeline items */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--glass-border);
+}
+.t-item::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  bottom: 18px;
+  width: calc(100% - 32px);
+  height: 1px;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 6px,
+    var(--text-mid) 6px,
+    var(--text-mid) 10px
+  );
+  opacity: 0.75;
+  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+}
+.t-item:last-child::after { display: none; }
 
 .eco-wrap { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center; }
 @media (max-width: 900px) { .eco-wrap { grid-template-columns: 1fr; gap: 24px; } }
@@ -260,7 +300,7 @@ a{color:inherit;text-decoration:none;}
 .eco-panel-label { font-family: var(--font-mono); font-weight: 500; font-size: 11px; letter-spacing: .15em; text-transform: uppercase; color: var(--red-bright); margin-bottom: 6px; }
 .eco-panel-val { font-size: 15px; color: var(--text-mid); line-height: 1.6; font-weight: 400; }
 
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px;}
 .proj-card{padding:32px;cursor:pointer;transition:all .4s var(--ease);border:1px solid var(--glass-border);border-radius:8px;background:rgba(255,255,255,0.02);}
 .proj-card:hover{border-color:var(--red-bright);box-shadow:0 15px 30px var(--red-glow);background:rgba(255,51,51,0.05);}
 .proj-status{font-family:var(--font-mono);font-weight:500;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text-low);margin-bottom:16px;display:inline-flex;align-items:center;gap:8px;}
@@ -585,7 +625,7 @@ const DATA = {
   name: "Mouli Venkata Narasimha Godaba",
   shortName: "Mouli Godaba",
   role: "Cloud & DevOps Engineer",
-  bio: "I build and deploy containerized infrastructure end-to-end — from Docker Compose stacks to CI/CD pipelines on AWS. Currently a fresher DevOps/Cloud Engineer targeting production-grade systems, with hands-on work across Linux, Kubernetes, Terraform, and both AWS and Azure.",
+  bio: "I'm a DevOps & Cloud Engineer with hands-on experience building, automating, and deploying cloud infrastructure on Azure and AWS. Proficient in containerization with Docker and Kubernetes, infrastructure as code using Terraform, and CI/CD pipelines via GitHub Actions and Jenkins. Skilled in observability with Prometheus and Grafana, configuration management with Ansible, and Linux administration. Strong foundation in networking (VNet, NSG, Load Balancer, DNS), scripting (Bash, YAML), and Git-based workflows. Delivered production-inspired projects including a serverless Azure Functions API with automated CI/CD and an 11-microservice Kubernetes platform on AWS EC2 with HPA, Jenkins, and full monitoring. Currently pursuing AZ-104 certification and targeting entry-level DevOps, Cloud, Platform Engineer, and Junior SRE roles.",
   location: "Hyderabad, India",
 
   contact: {
@@ -593,14 +633,14 @@ const DATA = {
     phone: "+91 93981 67124",
     github: "https://github.com/moulisiddhu487",
     linkedin: "https://www.linkedin.com/in/mouli-godaba-121a4525a",
-    resume: "https://drive.google.com/file/d/1XvKjf2HVxG2uKs3UYtWkIdyCPDBNfNtc/view?usp=sharing" // DIRECT CV LINK
+    resume: "https://mouli-portfolio-six.vercel.app/Mouli_DevOps_Resume.pdf"
   },
 
   // Journey Timeline (Clean Terminal Logs Format)
   timeline: [
     {
-      title: "B.Sc. Mathematics, Electronics & Computer Science",
-      description: "Graduated from Adikavi Nannaya University. Built the analytical and problem-solving foundation for systems engineering.",
+      title: "B.Sc. Computer Science",
+      description: "Graduated from Chambers Degree and PG College, Pallakollu. Built the analytical and problem-solving foundation for systems engineering.",
       status: "[ EXIT 0 ] GRADUATION_SUCCESSFUL",
       statusType: "green"
     },
@@ -608,12 +648,6 @@ const DATA = {
       title: "DevOps Training & Certification (Feb 2026 - July 2026)",
       description: "Xtream Tech, Hyderabad — Completed hands-on labs with Docker, Kubernetes, Terraform, and Ansible. Learned 2 major cloud technologies (AWS & Azure) and received full certification.",
       status: "[ EXIT 0 ] MODULES_EXECUTED_SUCCESSFULLY",
-      statusType: "green"
-    },
-    {
-      title: "Serverless Resume API",
-      description: "Built and deployed a live REST API on Azure Functions. Configured secure CORS policies, resolved SCM auth, and fully automated deployment via GitHub Actions CI/CD pipelines.",
-      status: "[ EXIT 0 ] DEPLOYED_TO_PRODUCTION",
       statusType: "green"
     },
     {
@@ -684,13 +718,44 @@ const DATA = {
       summary: "Built and deployed a live REST API on Azure Functions exposing structured resume data. Fully automated backend updates using a CI/CD pipeline.",
       stack: ["Azure Functions", "GitHub Actions", "REST API", "CORS"],
       github: "https://github.com/moulisiddhu487-svg/azure-resume-api",
-      demo: "https://resume-api-30847.azurewebsites.net/api/cv" 
+      demo: "https://resume-api-30847.azurewebsites.net/api/cv"
+    },
+    {
+      name: "Cloud-Native Microservices Observability & Auto-Scaling Infrastructure",
+      status: "LIVE",
+      summary: "Production-inspired Kubernetes & SRE platform on AWS EC2 using K3s. Deployed Google's 11-microservice Online Boutique with self-healing, HPA autoscaling, Jenkins CI/CD, and Prometheus/Grafana observability. Validated through controlled failure and load testing.",
+      stack: ["AWS EC2", "K3s", "Kubernetes", "Jenkins", "Prometheus", "Grafana", "HPA", "Bash"],
+      github: "https://github.com/moulisiddhu487-svg/Cloud-Native-Microservices-Observability-Auto-Scaling-Infrastructure",
+      overview: "Built a single-node Kubernetes platform on AWS EC2 using K3s to deploy and operate Google's Online Boutique (11 microservices). The platform demonstrates Kubernetes orchestration, self-healing via desired-state reconciliation, HPA-based autoscaling (1→3 replicas), Jenkins CI/CD pipelines, and full-stack observability with Prometheus, Node Exporter, Kube-State-Metrics, and Grafana with email alerts.",
+      architecture: "AWS EC2 (Ubuntu 24.04) runs K3s cluster with three namespaces: boutique (11 microservices + Redis + loadgenerator), default (Prometheus, Node Exporter, Grafana), jenkins (Jenkins CI/CD). NodePort services expose Online Boutique (30088), Grafana (30300), and Jenkins (30808). HPA targets 80% CPU for frontend, cartservice, recommendationservice.",
+      deployment: "Automated via deploy-all.sh script. K3s installed via official script. Online Boutique manifests patched for NodePort. HPA configured for CPU-based scaling. Jenkins deployed with Jenkinsfile for declarative pipeline. Monitoring stack deployed via monitoring.yaml with Prometheus scraping Node Exporter and Kube-State-Metrics.",
+      problem: "Running a full microservices platform on a single EC2 instance with limited resources while demonstrating production-grade Kubernetes patterns including self-healing, autoscaling, CI/CD, and observability.",
+      solution: "Used lightweight K3s instead of full Kubernetes. Configured resource requests/limits for all workloads. Implemented HPA for elastic scaling. Added comprehensive monitoring with alerting. Validated with controlled pod deletion and load generator scaling tests.",
+      demo: "#"
     }
   ],
 
   // Roadmap Section
   future: {
     learning: [
+      { 
+        label:"Land a fresher DevOps / Cloud Engineer role", 
+        logs: [
+          "> listening on port 8080<span class=\"dot-anim\"><span>.</span><span>.</span><span>.</span></span>", 
+          "> waiting for recruiters<span class=\"dot-anim\"><span>.</span><span>.</span><span>.</span></span>"
+        ], 
+        badgeHtml:`READY&nbsp;<span class="cursor-block half-cursor green-cursor"></span>`, 
+        status: "ready" 
+      },
+      { 
+        label:"Cloud-Native Microservices Observability & Auto-Scaling Infrastructure", 
+        logs: [
+          "> kubectl apply -f boutique/<span class=\"dot-anim\"><span>.</span><span>.</span><span>.</span></span>", 
+          "> HPA targets configured<span class=\"dot-anim\"><span>.</span><span>.</span><span>.</span></span>"
+        ], 
+        badgeHtml:`READY&nbsp;<span class="cursor-block half-cursor green-cursor"></span>`, 
+        status: "ready" 
+      },
       { 
         label:"Microsoft Azure Administrator (AZ-104)", 
         logs: [
@@ -699,20 +764,9 @@ const DATA = {
         ], 
         badgeHtml:`BUILDING&nbsp;<span class="cursor-block half-cursor red-cursor"></span>`, 
         status: "building" 
-      },
-      { label:"Certified Kubernetes Administrator (CKA)", badgeHtml:"[ QUEUED ]" },
-      { label:"HashiCorp Terraform Associate", badgeHtml:"[ QUEUED ]" }
+      }
     ],
     goals: [
-      { 
-        label:"Land a fresher DevOps / Cloud Engineer role", 
-        logs: [
-          "> listening on port 8080...", 
-          "> Waiting for recruiters."
-        ], 
-        badgeHtml:`READY&nbsp;<span class="cursor-block half-cursor green-cursor"></span>`, 
-        status: "ready" 
-      },
       { 
         label:"JobTrackHub (SaaS job seeker tool)", 
         logs: [
@@ -722,7 +776,8 @@ const DATA = {
         badgeHtml:`BUILDING&nbsp;<span class="cursor-block half-cursor red-cursor"></span>`, 
         status: "building" 
       },
-      { label:"Build production Kubernetes deployment experience", badgeHtml:"[ QUEUED ]" }
+      { label:"Certified Kubernetes Administrator (CKA)", badgeHtml:"[ QUEUED ]" },
+      { label:"HashiCorp Terraform Associate", badgeHtml:"[ QUEUED ]" }
     ]
   }
 };
@@ -760,7 +815,7 @@ const DATA = {
 
   const contactItems = [
     {id:'email', label:'Email', tooltip:'Send Email', href:`mailto:${DATA.contact.email}`, icon: icons.email},
-    {id:'whatsapp', label:'WhatsApp', tooltip:'Direct Message', href:`https://wa.me/${DATA.contact.phone.replace(/[^0-9]/g, '')}?text=Hi%20Mouli,%20I%20saw%20your%20DevOps%20portfolio...`, icon: icons.whatsapp},
+    {id:'whatsapp', label:'WhatsApp', tooltip:'Direct Message', href:`https://wa.me/${DATA.contact.phone.replace(/[^0-9]/g, '')}?text=Hi%20Mouli,%20I%20came%20across%20your%20DevOps%20portfolio%20and%20was%20impressed%20by%20your%20work%20with%20Kubernetes%2C%20Azure%2C%20and%20CI%2FCD%20automation.%20I%27d%20love%20to%20connect%20regarding%20potential%20opportunities.`, icon: icons.whatsapp},
     {id:'github', label:'GitHub', tooltip:'View GitHub', href:DATA.contact.github, external:true, icon: icons.github},
     {id:'linkedin', label:'LinkedIn', tooltip:'View LinkedIn', href:DATA.contact.linkedin, external:true, icon: icons.linkedin},
   ];
@@ -855,7 +910,6 @@ const DATA = {
       el.innerHTML = `
         <div class="t-title">${item.title}</div>
         <div class="t-desc">${item.description}</div>
-        <div class="t-dashed"></div>
         ${logsHtml}
         <div class="${item.statusType === 'green' ? 't-status-green' : 't-status-red'}">${item.status}</div>
       `;
@@ -995,22 +1049,36 @@ const DATA = {
   renderProjects();
 
   function openModal(p){
-    const rows = [
-      ['Overview', p.overview],
-      ['Architecture', p.architecture],
-      ['Deployment Flow', p.deployment],
-      ['Problem', p.problem],
-      ['Solution', p.solution],
-    ].filter(r=>r[1]);
+    const isK3s = p.name.includes('Cloud-Native');
     let links = '';
     if(p.github) links += `<a class="btn btn-ghost" href="${p.github}" target="_blank" rel="noopener noreferrer">GitHub Repo →</a>`;
     if(p.demo && p.demo !== '#') links += `<a class="btn btn-primary" href="${p.demo}" target="_blank" rel="noopener noreferrer" style="margin-left:10px">Live API →</a>`;
-    $('#modal-content').innerHTML = `
+    
+    let content = `
       <div class="modal-row"><div class="modal-label">${p.status||'Project'}</div><h2 style="font-family:var(--font-display);font-size:26px;font-weight:600;color:#fff;margin-top:4px;">${p.name}</h2></div>
-      ${rows.map(r=>`<div class="modal-row"><div class="modal-label">${r[0]}</div><div class="modal-val">${r[1]}</div></div>`).join('')}
-      ${(p.stack&&p.stack.length)?`<div class="modal-row"><div class="modal-label">Stack</div><div class="proj-stack">${p.stack.map(s=>`<span class="chip">${s}</span>`).join('')}</div></div>`:''}
-      ${links?`<div class="modal-row">${links}</div>`:''}
     `;
+    
+    if (isK3s) {
+      content += `
+        <div class="modal-row"><div class="modal-label">Overview</div><div class="modal-val">${p.overview||''}</div></div>
+        ${links?`<div class="modal-row">${links}</div>`:''}
+      `;
+    } else {
+      const rows = [
+        ['Overview', p.overview],
+        ['Architecture', p.architecture],
+        ['Deployment Flow', p.deployment],
+        ['Problem', p.problem],
+        ['Solution', p.solution],
+      ].filter(r=>r[1]);
+      content += `
+        ${rows.map(r=>`<div class="modal-row"><div class="modal-label">${r[0]}</div><div class="modal-val">${r[1]}</div></div>`).join('')}
+        ${(p.stack&&p.stack.length)?`<div class="modal-row"><div class="modal-label">Stack</div><div class="proj-stack">${p.stack.map(s=>`<span class="chip">${s}</span>`).join('')}</div></div>`:''}
+        ${links?`<div class="modal-row">${links}</div>`:''}
+      `;
+    }
+    
+    $('#modal-content').innerHTML = content;
     const modalEl = $('#proj-modal');
     $('#proj-modal-overlay').classList.add('open');
     setTimeout(()=> {
