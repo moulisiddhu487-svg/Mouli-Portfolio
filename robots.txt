@@ -1,6 +1,5 @@
+# robots.txt for https://mouli-portfolio-six.vercel.app/
 User-agent: *
 Allow: /
 
 Sitemap: https://mouli-portfolio-six.vercel.app/sitemap.xml
-
-# Mouli Portfolio - crawler config

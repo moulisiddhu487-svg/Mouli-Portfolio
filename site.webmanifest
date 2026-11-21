@@ -1,0 +1,9 @@
+{
+  "name": "Mouli Godaba \u2014 Cloud & DevOps Engineer",
+  "short_name": "Mouli Godaba",
+  "description": "Cloud & DevOps Engineer portfolio showcasing AWS, Azure, Docker, Kubernetes, Terraform, CI/CD, and Grafana projects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505"
+}

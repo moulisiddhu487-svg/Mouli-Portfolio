@@ -29,7 +29,7 @@ My personal portfolio site — a single-file, cinematic scroll experience presen
 | Styling      | Custom CSS3 (no frameworks)             |
 | Interactivity| Vanilla JavaScript                      |
 | Typography   | Inter + Fira Code (Google Fonts)        |
-| Hosting      | Vercel (auto-deploys on push to `main`) |
+| Deployment   | Containerized with Docker & auto-deployed via Vercel |
 
 ## Project Structure
 
@@ -40,6 +40,8 @@ Mouli-Portfolio/
 ├── og-image.png             # Open Graph preview image
 ├── robots.txt               # Crawler rules
 ├── sitemap.xml              # SEO sitemap
+├── site.webmanifest         # Web app manifest
+├── vercel.json              # Hosting & SEO headers
 └── LICENSE                  # MIT License
 ```
 
@@ -57,7 +59,7 @@ npx serve .
 
 ## Deployment
 
-Pushes to `main` deploy automatically to Vercel.
+Containerized with Docker (`Built with intent, deployed with Docker`) and automatically deployed on push to `main`.
 
 ## License
 
